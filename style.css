@@ -9,36 +9,49 @@ body {
     border: white 1px solid;
     margin: auto;
     position: relative;
-    top: 100px;
+    top: 50px;
 }
 .container h1 {
     text-align: center;
 }
 .container p {
     text-align: justify;
+    padding: 0px 10px;
 }
 
 .header {
     background-color: rgb(58, 58, 58);
     width: 100%;
-    padding: 5px;
+    padding: 5px 10px;
     border: white 1px solid;
     position: fixed;
     top: 0;
     z-index: 10;
+    width: 70%;
+    margin: auto;
+    position: relative;
 }
 .button {
     background-color: black;
     color: white;
-    border: 1px solid white;
-    padding: 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
+    font-size: 16px;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    position: absolute;
+    width: 32.9%;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    padding: 10px 0;
+    border: 2px solid white;
+    background-image: linear-gradient(to right, #000000, #434343);
 }
