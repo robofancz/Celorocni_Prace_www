@@ -55,3 +55,20 @@ body {
     border: 2px solid white;
     background-image: linear-gradient(to right, #000000, #434343);
 }
+
+.performance {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    border: 2px solid black;
+    width: 70%;
+    margin: auto;}
+.performance td {
+    padding: 5px;
+    border: 1px solid white;
+}
+.performance th {
+    padding: 5px;
+    border: 1px solid white;
+    background-color: grey;
+    color: white;
+}
