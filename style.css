@@ -4,11 +4,11 @@ body {
 }
 .container {
     background-color: #3a506b;
-    width: 100%;
+    width: 70%;
     padding: 5px;
     margin: auto;
     position: relative;
-    top: 50px;
+    top: 10px;
 }
 .container h1 {
     text-align: center;
@@ -19,7 +19,6 @@ body {
 }
 
 .header {
-    background-color: #3a506b;
     width: 100%;
     padding: 5px 10px;
     position: fixed;
@@ -27,7 +26,8 @@ body {
     z-index: 10;
     width: 70%;
     margin: auto;
-    position: relative;
+    position: sticky;
+    background-color: #0b132b;
 }
 .button {
     background-color: #1c2541;
@@ -40,7 +40,6 @@ body {
     font-size: 16px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    width: 24.56%;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -48,10 +47,34 @@ body {
     letter-spacing: 1px;
     text-shadow: 1px 1px 2px black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 10px 0;
     padding: 10px 0;
+    width: 24.3%;
     border: 2px solid white;
     background-image: linear-gradient(to right, #1c2541, #0b132b);
+}
+
+.current {
+    background-color: #5bc0b5;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 24.3%;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    border: 2px solid white;
+    background-image: linear-gradient(to right, #5bc0b5, #0b132b);
 }
 
 .performance {
@@ -69,4 +92,9 @@ body {
     border: 1px solid white;
     background-color: grey;
     color: white;
+}
+
+.textbox{
+    border: #0B132B solid 2px;
+    padding: 5px;
 }
