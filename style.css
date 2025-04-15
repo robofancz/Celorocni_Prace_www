@@ -108,13 +108,38 @@ body {
 }
 
 .silver_S15 {
-    width: 100%;
+    width: 99.56%;
     margin: auto;
     position: relative;
     top: 10px;    
+    border: #0B132B solid 2px;
+}
+
+.models_images{
+    width: 99.56%;
+    margin: auto;
+    position: relative;
+    top: 10px;    
+    border: #0B132B solid 2px;
 }
 
 .underimage_text{
-    opacity: 0.8;
-    color: grey;
+    opacity: 0.6;
+    position: relative;
+    top: -10px;    
+    left: -7px;
+}
+
+.dimensions_table{
+    border: 2px solid #0B132B;
+}
+.dimensions_table td{
+    padding: 5px;
+    border: 1px solid white;
+}
+.dimensions_table th{
+    padding: 5px;
+    border: 1px solid white;
+    background-color: grey;
+    color: white;
 }
