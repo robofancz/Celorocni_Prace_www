@@ -143,3 +143,33 @@ body {
     background-color: grey;
     color: white;
 }
+
+.motor_table {
+    border: 2px solid #0B132B;
+}
+.motor_table td{
+    padding: 5px;
+    border: 1px solid white;
+}
+.motor_table th {
+    padding: 5px;
+    border: 1px solid white;
+    background-color: grey;
+    color: white;
+}
+/* .up{
+    padding: 5px;
+    position: fixed;
+    background-color: white;
+    margin: -20px 630px;
+    border: 2px solid yellow;
+    border-radius: 100px;
+    width: 36px;
+    text-decoration: none;
+    
+}
+.up :hover{
+    background-color: #5bc0b5;
+    color: #0B132B;
+    text-decoration: none;
+} */
