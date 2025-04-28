@@ -1,5 +1,5 @@
 body {
-    background-color: #7F7B82;
+    background-color: #404048;
     color : white;
     transition: background-color 0.5s, color 0.5s;
 }
@@ -12,7 +12,7 @@ img{
 
 
 .container {
-    background-color: #444554;
+    background-color: #11151c;
     width: 70%;
     padding: 5px;
     margin: auto;
@@ -36,7 +36,7 @@ img{
     width: 70%;
     margin: auto;
     position: sticky;
-    background-color: #7F7B82;
+    background-color: #404048;
     transition: background-color 0.5s, color 0.5s;
 }
 .button {
@@ -56,16 +56,16 @@ img{
     text-transform: uppercase;
     letter-spacing: 1px;
     text-shadow: 1px 1px 2px #756A7D;
-    box-shadow: 0 4px 8px #D8C2CC(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px #010101(0.5, 0.5, 0.5, 0.5);
     padding: 10px 0;
     width: 24.8%;
-    border: 2px solid white;
+    border: #66707a solid 2px;
     margin: auto;
     transition: background-color 0.5s, color 0.5s;
 }
 
 .button :hover {
-   background-color: #444554;
+   background-color: #505860;
     color: #0B132B;
 }
 
@@ -76,7 +76,6 @@ img{
 
 
 .current {
-    background-color: #5bc0b5;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -95,8 +94,8 @@ img{
     text-shadow: 1px 1px 2px #756A7D;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px 0;
-    border: 2px solid white;
-    background-image: linear-gradient(to right, #5bc0b5, #0b132b);
+    border: #66707a solid 2px;
+    background-image: linear-gradient(to right, #505860, #505860);
     margin: auto;
     transition: background-color 0.5s, color 0.5s;
 }
@@ -104,7 +103,7 @@ img{
 .performance {
     background-color: #3a506b;
     color: white;
-    border: 2px solid black;
+    border: #66707a solid 2px;
     width: 70%;
     margin: auto;
 }
@@ -120,7 +119,7 @@ img{
 }
 
 .textbox{
-    border: #0B132B solid 2px;
+    border: #66707a solid 2px;
     padding: 5px;
     margin: auto;
 }
@@ -130,7 +129,7 @@ img{
     margin: auto;
     position: relative;
     top: 10px;    
-    border: #0B132B solid 2px;
+    border: #66707a solid 2px;
 }
 
 .models_images{
@@ -242,7 +241,7 @@ img{
 }
 
 .footer {
-    background-color: #1c2541;
+    background-color: #404048;
     color: white;
     margin: auto;
     position: relative;
@@ -326,5 +325,6 @@ img{
 .light_dark{
     background-color: #EDE6E3;
     color: black;
-    position: static;
+    z-index: 11;
+    position: fixed;
 }
