@@ -27,7 +27,6 @@ img{
 }
 
 .header {
-    width: 100%;
     padding: 5px 10px;
     position: fixed;
     top: 0;
@@ -265,4 +264,42 @@ img{
 .undersource_text{
     opacity: 0.6;
     margin: auto;
+}
+
+.lightmode {
+    background-color: #EDE6E3;
+    color: black;
+    
+}
+.lightmode .container {
+    background-color: #DADAD9;
+}
+.lightmode .header {
+    background-color: #EDE6E3;
+}
+.lightmode .button {
+    background-color: #785964;
+    color: #3F88C5;
+    border: 2px solid #3F88C5;
+}
+.lightmode .current {
+    color: #3F88C5;
+    border: 2px solid #1084e3;
+    background-image: linear-gradient(to right, #3F88C5, #785964);
+}
+.lightmode .button_more {
+    background-color: #785964;
+    border: 2px solid #1084e3;
+    color: black;
+}
+.lightmode .button:hover {
+    background-color: #3F88C5;
+    color: #785964;
+}
+.lightmode .button_more:hover {
+    background-image: linear-gradient(to right, #3F88C5, #785964);
+    color: black;
+}
+.lightmode .footer {
+    background-color: #EDE6E3;
 }
