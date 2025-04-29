@@ -322,9 +322,52 @@ img{
 }
 
 
-.light_dark{
-    background-color: #EDE6E3;
+
+
+.light_dark {
+    background-color: #3a506b;
     color: black;
     z-index: 11;
     position: fixed;
+    border: #3a506b solid 2px;
+    border-radius: 20px;
 }
+
+.lightmode .light_dark {
+    background-color: #DADAD9;
+    color: black;
+    z-index: 11;
+    position: fixed;
+    border: #7F7B82 solid 2px;
+    border-radius: 20px;
+}
+.icon {
+    z-index: 7;
+    
+}
+
+.circle {
+    width: 26.4px;
+    height: 20px;
+    border-radius: 42%;
+    background-color: #505860;
+    position: fixed;
+    top: 9.5px;
+    left: 35px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.lightmode .circle {
+    background-color: #BFACB5;
+    position: fixed;
+    top: 9.5px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 5;
+    
+}
+
+
+
+
