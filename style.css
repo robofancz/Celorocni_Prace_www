@@ -10,7 +10,9 @@ img{
     margin: auto;
 }
 
-
+/* Main container */
+/*  */
+/*  */
 .container {
     background-color: #11151c;
     width: 70%;
@@ -28,6 +30,20 @@ img{
     padding: 0px 10px;
 }
 
+.textbox{
+    border: #66707a solid 2px;
+    padding: 5px;
+    margin: auto;
+}
+
+
+/*  */
+/*  */
+
+
+/* Navbar */
+/*  */
+/*  */
 .header {
     padding: 5px 10px;
     position: fixed;
@@ -39,6 +55,7 @@ img{
     background-color: #404048;
     transition: background-color 0.5s, color 0.5s;
 }
+
 .button {
     background-color: #BFACB5;
     color: white;
@@ -69,11 +86,6 @@ img{
     color: #0B132B;
 }
 
-/* .button :hover{
-    background-color: #5bc0b5;
-    z-index: 3;
-} */
-
 
 .current {
     color: white;
@@ -100,6 +112,13 @@ img{
     transition: background-color 0.5s, color 0.5s;
 }
 
+/*  */
+/*  */
+
+
+/* Performance tab table */
+/*  */
+/*  */
 .performance {
     background-color: #3a506b;
     color: white;
@@ -118,12 +137,13 @@ img{
     color: white;
 }
 
-.textbox{
-    border: #66707a solid 2px;
-    padding: 5px;
-    margin: auto;
-}
+/*  */
+/*  */
 
+
+/* Main page */
+/*  */
+/*  */
 .silver_S15 {
     width: 99.56%;
     margin: auto;
@@ -131,6 +151,33 @@ img{
     top: 10px;    
     border: #66707a solid 2px;
 }
+.button_more {
+    background-color:  #1c2541;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 3px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    right: 3px;
+    width: 60px;
+    height: 12px;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+    transition: background-color 0.5s, color 0.5s;
+}
+.button_more:hover {
+    background-image: linear-gradient(to right, #5bc0b5, #0b132b);
+    text-decoration: none;
+}
+
+
+/*  */
+/*  */
+
+
+
 
 .models_images{
     width: 99.56%;
@@ -193,26 +240,7 @@ img{
 } */
 
 
-.button_more {
-    background-color:  #1c2541;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 3px;
-    text-decoration: none;
-    color: white;
-    position: absolute;
-    right: 3px;
-    width: 60px;
-    height: 12px;
-    text-align: center;
-    font-size: 14px;
-    margin: auto;
-    transition: background-color 0.5s, color 0.5s;
-}
-.button_more:hover {
-    background-image: linear-gradient(to right, #5bc0b5, #0b132b);
-    text-decoration: none;
-}
+
 
 .up_button{
     margin: auto;
@@ -276,6 +304,11 @@ img{
     margin: auto;
 }
 
+
+
+/* Dark and Light mode */
+/*  */
+/*  */
 .lightmode {
     background-color: #EDE6E3;
     transition: background-color 0.5s, color 0.5s;
@@ -322,8 +355,9 @@ img{
 }
 
 
-
-
+/* Switch */
+/*  */
+/*  */
 .light_dark {
     background-color: #3a506b;
     color: black;
@@ -332,7 +366,6 @@ img{
     border: #3a506b solid 2px;
     border-radius: 20px;
 }
-
 .lightmode .light_dark {
     background-color: #785964;
     color: black;
@@ -345,7 +378,6 @@ img{
     z-index: 7;
     
 }
-
 .circle {
     width: 26.4px;
     height: 20px;
@@ -369,5 +401,89 @@ img{
 }
 
 
+/*  */
+/*  */
+/*  */
 
 
+/* Side panel menu */
+/*  */
+/*  */
+.sidepanel {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100px;
+    background-color: #0b132b;
+    transition: left 0.5s;
+}
+
+.sidepanel.open {
+    left: 0;
+}
+
+.sidepanel .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidepanel .content {
+    padding: 20px;
+    color: white;
+}
+
+.sidepanel .content p {
+    margin-bottom: 10px;
+}
+
+.sidepanel .content a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidepanel .content a:hover {
+    text-decoration: underline;
+}
+
+.sidepanel-icon {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.sidepanel.open .sidepanel-icon {
+    display: none;
+}
+.sidepanel.open .close-button {
+    display: block;
+}
+.sidepanel-icon:hover {
+    color: #5bc0b5;
+}
+.sidepanel.open .sidepanel-icon:hover {
+    color: #5bc0b5;
+}
+.sidepanel.open .close-button:hover {
+    color: #5bc0b5;
+}
+.sidepanel.open .content a:hover {
+    text-decoration: underline;
+}
+.sidepanel.open .content a {
+    color: #5bc0b5;
+}
+.sidepanel.open .content p {
+    color: #5bc0b5;
+}
+.sidepanel.open .content {
+    color: #5bc0b5;
+}

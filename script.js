@@ -1,3 +1,7 @@
+// Dark and lightmode button
+// 
+// 
+// 
 function light() {
     var element = document.body;
     element.classList.toggle("lightmode");
@@ -21,3 +25,15 @@ function light() {
       localStorage.setItem('darkMode', 'disabled');
     }
   });
+// 
+// 
+//   
+
+
+// Sidepanel functionality
+const sidepanelButton = document.getElementById('sidepanel-button');
+const sidepanel = document.getElementById('sidepanel');
+
+sidepanelButton.addEventListener('click', () => {
+    sidepanel.classList.toggle('open');
+});
