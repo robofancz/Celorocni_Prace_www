@@ -88,28 +88,7 @@ img{
 
 
 .current {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    width: 24.3%;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px #756A7D;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 10px 0;
-    border: #66707a solid 2px;
-    background-image: linear-gradient(to right, #505860, #505860);
-    margin: auto;
-    transition: background-color 0.5s, color 0.5s;
 }
 
 /*  */
@@ -332,10 +311,7 @@ img{
     transition: background-color 0.5s, color 0.5s;
 }
 .lightmode .current {
-    color: #785964;
-    border: 2px solid #BFACB5;
-    background-image: linear-gradient(to right, #BFACB5, #BFACB5);
-    transition: background-color 0.5s, color 0.5s;
+    font-weight: bold;
 }
 .lightmode .button_more {
     background-color: #DADAD9;
@@ -353,7 +329,29 @@ img{
 .lightmode .footer {
     background-color: #EDE6E3;
 }
+.lightmode .sidenav {
+    background-color: #EDE6E3;
+}
 
+.lightmode .sidenav a {
+    color: #051923;
+}
+
+.lightmode .sidenav a:hover {
+    color: #BFACB5;
+}
+
+.lightmode .sidenav .closebtn {
+    color: #051923;
+}
+
+.lightmode #main {
+    margin-left: 0;
+}
+
+.lightmode .main_pages {
+    color: #7F7B82;
+}
 
 /* Switch */
 /*  */
@@ -365,6 +363,8 @@ img{
     position: fixed;
     border: #3a506b solid 2px;
     border-radius: 20px;
+    position: fixed;
+    right: 8px;
 }
 .lightmode .light_dark {
     background-color: #785964;
@@ -385,7 +385,7 @@ img{
     background-color: #BFACB5;
     position: fixed;
     top: 9.5px;
-    left: 35px;
+    right: 35px;
     cursor: pointer;
     z-index: 5;
 }
@@ -394,7 +394,7 @@ img{
     background-color: #BFACB5;
     position: fixed;
     top: 9.5px;
-    left: 10px;
+    right: 10px;
     cursor: pointer;
     z-index: 5;
     
@@ -409,81 +409,56 @@ img{
 /* Side panel menu */
 /*  */
 /*  */
-.sidepanel {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 300px;
-    height: 100px;
-    background-color: #0b132b;
-    transition: left 0.5s;
-}
-
-.sidepanel.open {
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 13; 
+    top: 0; 
     left: 0;
-}
-
-.sidepanel .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.sidepanel .content {
-    padding: 20px;
-    color: white;
-}
-
-.sidepanel .content p {
-    margin-bottom: 10px;
-}
-
-.sidepanel .content a {
-    color: white;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-}
-
-.sidepanel .content a:hover {
-    text-decoration: underline;
-}
-
-.sidepanel-icon {
-    position: relative;
-    top: 50px;
-    left: 50px;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 20;
-}
-
-.sidepanel.open .sidepanel-icon {
-    display: none;
-}
-.sidepanel.open .close-button {
+    font-size: 25px;
+    color: #505860;
     display: block;
-}
-.sidepanel-icon:hover {
-    color: #5bc0b5;
-}
-.sidepanel.open .sidepanel-icon:hover {
-    color: #5bc0b5;
-}
-.sidepanel.open .close-button:hover {
-    color: #5bc0b5;
-}
-.sidepanel.open .content a:hover {
-    text-decoration: underline;
-}
-.sidepanel.open .content a {
-    color: #5bc0b5;
-}
-.sidepanel.open .content p {
-    color: #5bc0b5;
-}
-.sidepanel.open .content {
-    color: #5bc0b5;
-}
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .main_pages{
+    text-transform: uppercase;
+    font-size: 36px;
+  }
+

@@ -31,9 +31,11 @@ function light() {
 
 
 // Sidepanel functionality
-const sidepanelButton = document.getElementById('sidepanel-button');
-const sidepanel = document.getElementById('sidepanel');
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
-sidepanelButton.addEventListener('click', () => {
-    sidepanel.classList.toggle('open');
-});
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
