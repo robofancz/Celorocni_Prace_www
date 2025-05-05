@@ -1,0 +1,379 @@
+// Variables
+$primary-bg: #404048;
+$container-bg: #11151c;
+$header-bg: #404048;
+$footer-bg: #404048;
+$border-color: #66707a;
+$button-bg: #BFACB5;
+$button-hover-bg: #505860;
+$button-hover-color: #0B132B;
+$light-bg: #EDE6E3;
+$light-container-bg: #DADAD9;
+$light-button-bg: #DADAD9;
+$light-button-color: #785964;
+
+body {
+  background-color: $primary-bg;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+
+  p {
+    text-align: block;
+  }
+
+  img {
+    margin: auto;
+  }
+}
+
+.container {
+  background-color: $container-bg;
+  width: 70%;
+  padding: 5px;
+  margin: auto;
+  position: relative;
+  top: 10px;
+  transition: background-color 0.5s, color 0.5s;
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
+    padding: 0 10px;
+  }
+}
+
+.textbox {
+  border: 2px solid $border-color;
+  padding: 5px;
+  margin: auto;
+}
+
+.header {
+  padding: 5px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 70%;
+  margin: auto;
+  background-color: $header-bg;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.button {
+  background-color: $button-bg;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.5s, color 0.5s;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #756A7D;
+  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.5);
+  padding: 10px 0;
+  width: 24.8%;
+  border: 2px solid $border-color;
+  margin: auto;
+
+  &:hover {
+    background-color: $button-hover-bg;
+    color: $button-hover-color;
+  }
+}
+
+.current {
+  font-weight: bold;
+}
+
+.performance,
+.dimensions_table,
+.motor_table {
+  background-color: #3a506b;
+  color: white;
+  border: 2px solid $border-color;
+  width: 70%;
+  margin: auto;
+
+  th {
+    padding: 5px;
+    border: 1px solid white;
+    background-color: grey;
+    color: white;
+  }
+
+  td {
+    padding: 5px;
+    border: 1px solid white;
+  }
+}
+
+.silver_S15 {
+  width: 99.56%;
+  margin: auto;
+  position: relative;
+  top: 10px;
+  border: 2px solid $border-color;
+}
+
+.button_more {
+  background-color: #1c2541;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 3px;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  right: 3px;
+  width: 60px;
+  height: 12px;
+  text-align: center;
+  font-size: 14px;
+  margin: auto;
+  transition: background-color 0.5s, color 0.5s;
+
+  &:hover {
+    background-image: linear-gradient(to right, #5bc0b5, #0b132b);
+    text-decoration: none;
+  }
+}
+
+.models_images,
+.table_box {
+  width: 99.56%;
+  margin: auto;
+  position: relative;
+  top: 10px;
+  border: 2px solid #0B132B;
+  padding: 5px;
+  text-align: left;
+}
+
+.underimage_text,
+.undersource_text {
+  opacity: 0.6;
+  margin: auto;
+  position: relative;
+  top: -10px;
+  left: -7px;
+}
+
+.up_button {
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  width: 30px;
+  height: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  position: fixed;
+  right: 15px;
+  bottom: 25px;
+  z-index: 10;
+
+  &:hover {
+    background-color: #5bc0b5;
+  }
+}
+
+.footer {
+  background-color: $footer-bg;
+  color: white;
+  margin: auto;
+  position: relative;
+  bottom: -10px;
+  width: 100%;
+  left: -8px;
+  padding: 15px;
+  transition: background-color 0.5s, color 0.5s;
+
+  .button {
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    width: 33%;
+  }
+}
+
+// Light mode overrides
+.lightmode {
+  background-color: $light-bg;
+  color: black;
+  transition: background-color 0.5s, color 0.5s;
+
+  .container {
+    background-color: $light-container-bg;
+  }
+
+  .header {
+    background-color: $light-bg;
+    color: black;
+  }
+
+  .button {
+    background-color: $light-button-bg;
+    color: $light-button-color;
+    border: 2px solid $button-bg;
+
+    &:hover {
+      background-color: $button-bg;
+      color: #7F7B82;
+    }
+  }
+
+  .current {
+    font-weight: bold;
+  }
+
+  .button_more {
+    background-color: $light-container-bg;
+    border: 2px solid $button-bg;
+    color: black;
+
+    &:hover {
+      background-image: linear-gradient(to right, $button-bg, $light-button-color);
+      color: black;
+    }
+  }
+
+  .footer {
+    background-color: $light-bg;
+  }
+
+  .sidenav {
+    background-color: $light-container-bg;
+
+    a {
+      color: #051923;
+
+      &:hover {
+        color: $button-bg;
+      }
+    }
+
+    .closebtn {
+      color: #051923;
+    }
+  }
+
+  #main {
+    margin-left: 0;
+  }
+
+  .main_pages {
+    color: #7F7B82;
+  }
+
+  .light_dark {
+    background-color: $light-button-color;
+    border: 2px solid $light-button-color;
+  }
+
+  .circle {
+    background-color: $button-bg;
+    right: 10px;
+  }
+}
+
+// Switch control
+.light_dark {
+  background-color: #3a506b;
+  color: black;
+  z-index: 11;
+  position: fixed;
+  border: 2px solid #3a506b;
+  border-radius: 20px;
+  right: 8px;
+}
+
+.icon {
+  z-index: 7;
+}
+
+.circle {
+  width: 26.4px;
+  height: 20px;
+  border-radius: 42%;
+  background-color: $button-bg;
+  position: fixed;
+  top: 9.5px;
+  right: 35px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+// Sidenav
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 13;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #505860;
+    display: block;
+    transition: 0.3s;
+
+    &:hover {
+      color: #f1f1f1;
+    }
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+.main_pages {
+  text-transform: uppercase;
+  font-size: 36px;
+}
