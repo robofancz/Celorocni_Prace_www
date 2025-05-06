@@ -443,6 +443,10 @@ img{
     font-size: 20px;
     margin-left: 50px;
   }
+  .sidenav .current {
+    font-weight: bold;
+    color: #f1f1f1;
+  }
 .sources_back{
     background-color: #11151c;
     color: white;
