@@ -389,6 +389,12 @@ img{
     z-index: 5;
     
 }
+.lightmode .tuning_img_div {
+    background-color: #DADAD9;
+}
+.lightmode .invis {
+    color: #DADAD9;
+}
 
 
 /*  */
@@ -462,16 +468,24 @@ img{
   .tuning_picture{
     width: 65%;
     margin: auto;
-    padding: 15px;
+    padding: 25px;
     float: right;
+  }
+
+  .tuning_picture_left{
+    width: 65%;
+    margin: auto;
+    padding: 25px;
+    float: left;
   }
 
 .tuning_img_div{
     position: relative;
-    left: px;
     margin: auto;
     float: right;
     padding: 5px;
-    width: fit-content;
-    
+    background-color: #11151c;
+}
+.invis{
+    color: #010101;
 }
