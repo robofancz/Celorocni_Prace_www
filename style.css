@@ -14,7 +14,7 @@ img{
 /*  */
 /*  */
 .container {
-    background-color: #11151c;
+    background-image: repeating-linear-gradient(to left, #58030321, #11151c);
     width: 70%;
     padding: 5px;
     margin: auto;
@@ -31,9 +31,9 @@ img{
 }
 
 .textbox{
-    border: #66707a solid 2px;
     padding: 5px;
     margin: auto;
+;
 }
 
 
@@ -289,7 +289,7 @@ img{
 }
 .lightmode .container {
     transition: background-color 0.5s, color 0.5s;
-        background-color: #DADAD9;
+    background-image: repeating-linear-gradient(to left, #ccdbfd51, #DADAD9);
 }
 .lightmode .header {
     background-color: #EDE6E3;
@@ -389,12 +389,12 @@ img{
     z-index: 5;
     
 }
-.lightmode .tuning_img_div {
-    background-color: #DADAD9;
-}
+
 .lightmode .invis {
     color: #DADAD9;
 }
+
+
 
 
 /*  */
@@ -484,7 +484,6 @@ img{
     margin: auto;
     float: right;
     padding: 5px;
-    background-color: #11151c;
 }
 .invis{
     color: #010101;
