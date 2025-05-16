@@ -5,6 +5,10 @@ body {
 }
 p{
     text-align: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1 h2 h3 h4 h5 h6{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 img{
     margin: auto;
