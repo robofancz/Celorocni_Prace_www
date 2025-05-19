@@ -425,8 +425,8 @@ img{
 
 .intro-section {
     padding: 3rem 2rem;
-    background: var(--background-color); /* adjust for light/dark mode */
-    color: var(--text-color);
+    background-color: #EDE6E3; 
+    color: black;
   }
   
   .intro-content {
