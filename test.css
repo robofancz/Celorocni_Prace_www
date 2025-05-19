@@ -1,9 +1,25 @@
 :root {
     /* Lightmode */
+    --section_light: #dde2ea;
+    --section_alt_light: #DADAD9;
     --background_color_light: #f0f0f0;
-    --button_background_light: #007bff;
-    --button_hover_light: #0056b3;
     --text_light: #333333;
+    --container_light: repeating-linear-gradient(to left, #ccdbfd51, #dadad9);
+    --button_background_light: #DADAD9;
+    --button_background_alt_light: #dde2ea;
+    --button_hover_light: #BFACB5;
+
+        /* SideNav */
+        --sidenav_light: #dadad9;
+        --sidenav_a_light: #051923;
+        --sidenav_a_hover_light: #dfacb5;
+        --sidenav_close_light: #051923;
+        /* Switch */
+        --light_mode: #ede6e3;
+        --lightdark_background_light: #010101;
+        --circle_light: #505860; 
+    
+    
 
 
     /* Darkmode */
@@ -27,6 +43,10 @@
     
 }
 
+
+/*  */
+/* Darkmode */
+/*  */
 
 body{
     background-color: var(--body_color_dark);
@@ -155,6 +175,11 @@ body{
     font-weight: bold;
     color: var(--text_color_sidenav_current_dark);
 }
+.sidenav_btn{
+    color: var(--btn_background_dark);
+    font-size: 30px;
+    cursor: pointer;
+}
 
 
 
@@ -242,4 +267,83 @@ body{
     
     .section.alt ul li {
     color: var(--text_dark);
+    }
+
+
+
+
+/*  */
+/* Lightmode */
+/*  */
+
+.lightmode{
+    background-color: var(--light_mode);
+    transition: background-color 0.5s, color 0.5s;
+    
+    }
+    .lightmode .light_dark{
+        background-color: var(--lightdark_background_light);
+        color: var(--text_light);
+        border: var(--lightdark_background_light) solid 2px;
+    }
+
+    .lightmode body {
+        background-color: var(--background_color_light);
+    }
+
+    .lightmode .sidenav{
+        background-color: var(--sidenav_light);
+        }
+        .lightmode .sidenav a{
+            color: var(--sidenav_a_light);
+        }
+        .lightmode .sidenav a:hover{
+            color: var(--sidenav_a_hover_light);
+        }
+        .lightmode .sidenav .closebtn{
+            color: var(--sidenav_close_light);
+    }
+    .lightmode .sidenav_btn{
+        color: var(--sidenav_a_light);
+
+    }
+    .lightmode .circle{
+        background-color: var(--circle_light);
+        position: fixed;
+        top: 9.5px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    .lightmode .section {
+        background-color: var(--section_light);
+        color: var(--text_light);
+    }
+    .lightmode .section.alt {
+        background-color: var(--section_alt_light);
+        color: var(--text_dark);
+        }
+        
+        .lightmode .section.alt h2 {
+        color: var(--text_light);
+        }
+        
+        .lightmode .section.alt p {
+        color: var(--text_light);
+        }
+        
+        .lightmode .section.alt ul li {
+        color: var(--text_light);
+    }
+
+    .lightmode .btn{
+        background-color: var(--button_background_light);
+        color: var(--text_light);
+        }
+        .lightmode .section.alt .btn{
+            background-color: var(--button_background_alt_light);
+        }
+        .lightmode .btn:hover{
+            background-color: var(--button_hover_light);
     }
