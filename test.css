@@ -7,7 +7,9 @@
 
 
     /* Darkmode */
-    --background_color_dark: #404048;
+    --body_color_dark: #404048;
+    --background_color_dark: #46484f;
+    --background_color_alt_dark: #2b2d35;
     --text_dark: #ffffff;
     --btn_background_dark: #1a1a1a;
 
@@ -26,13 +28,9 @@
 }
 
 
-.body{
-    background-color: var(--background-color);
+body{
+    background-color: var(--body_color_dark);
     color: var(--text_dark);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 .home_div{
@@ -230,18 +228,18 @@
     }
 
 .section.alt {
-    background-color: var(--background_color_light);
-    color: var(--text_light);
+    background-color: var(--background_color_alt_dark);
+    color: var(--text_dark);
     }
     
     .section.alt h2 {
-    color: var(--text_light);
+    color: var(--text_dark);
     }
     
     .section.alt p {
-    color: var(--text_light);
+    color: var(--text_dark);
     }
     
     .section.alt ul li {
-    color: var(--text_light);
+    color: var(--text_dark);
     }
