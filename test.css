@@ -8,6 +8,7 @@
     --button_background_light: #DADAD9;
     --button_background_alt_light: #dde2ea;
     --button_hover_light: #BFACB5;
+    --navigation_light: #b2a1a195;
 
         /* SideNav */
         --sidenav_light: #dadad9;
@@ -28,7 +29,7 @@
     --background_color_alt_dark: #2b2d35;
     --text_dark: #ffffff;
     --btn_background_dark: #1a1a1a;
-    --section_dark: #160101;
+    --section_dark: #310101;
     --section_alt_dark: #141414;
     --section_button_hover_dark: #490505;
     
@@ -291,6 +292,13 @@ body{
     color: var(--text_dark);
     }
 
+.content table {
+    background-color: var();
+}
+
+.navigation{
+    background-color: var();
+}
 
 
 
@@ -375,4 +383,16 @@ body{
     .lightmode .section.alt .btn:hover{
         background-color: var(--button_hover_light);
         scale: 1.05;
+    }
+
+    .lightmode .section table{
+        background-color: var(-);
+    }
+
+    .lightmode .navigation{
+        background-color: var(--content_light);
+        padding: 1rem;
+        margin: auto;
+        align-self: center;
+        
     }
