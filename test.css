@@ -298,7 +298,71 @@ body{
 
 .navigation{
     background-color: var();
+    list-style: none;
+    }
+    .navigation a{
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        background-color: var(--navigation_light);
+        color: var(--text_dark);
+        font-size: 1rem;
+        transition: background-color 0.3s;
+    }
+    .navigation li{
+        display: inline-block;
+        margin-right: 0.2rem;
+        margin-bottom: 0.3rem;
+        padding-bottom: 0.4rem;
+        padding-top: 0.5rem;
+    }
+    .navigation li:hover{
+        scale: 1.05;
 }
+
+.models_table{
+    margin: auto;
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--section_dark);
+    color: var(--text_dark);
+    padding: 0.3rem;
+    }
+    .models_table th{
+        padding: 10px;
+        text-align: center;
+        border: var(--background_color_light) solid 1px;
+        border-radius: 10px;
+        z-index: 2;
+    }
+    .models_table tr{
+        padding: 10px;
+        text-align: center;
+    }
+
+.models_table_alt{
+    background-color: var(--section_alt_dark);
+    margin: auto;
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 10px;
+    color: var(--text_dark);
+    padding: 0.3rem;
+    }
+    .models_table_alt th{
+        padding: 10px;
+        text-align: center;
+        border: var(--background_color_light) solid 1px;
+        border-radius: 10px;
+        z-index: 2;
+    }
+    .models_table_alt tr{
+        padding: 10px;
+        text-align: center;
+    }
+
+
 
 
 
@@ -395,4 +459,45 @@ body{
         margin: auto;
         align-self: center;
         
+    }
+
+.lightmode .models_table{
+    background-color: var(--section_light);
+    margin: auto;
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 10px;
+    color: var(--text_light);
+    padding: 0.3rem;
+}
+    .lightmode .models_table th{
+        padding: 10px;
+        text-align: center;
+        border: var(--background_color_light) solid 1px;
+        border-radius: 10px;
+        z-index: 2;
+    }
+    .lightmode .models_table tr{
+        padding: 10px;
+        text-align: center;
+    }
+.lightmode .models_table_alt{
+    background-color: var(--section_alt_light);
+    margin: auto;
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 10px;
+    color: var(--text_light);
+    padding: 0.3rem;
+}
+    .lightmode .models_table_alt th{
+        padding: 10px;
+        text-align: center;
+        border: var(--background_color_light) solid 1px;
+        border-radius: 10px;
+        z-index: 2;
+    }
+    .lightmode .models_table_alt tr{
+        padding: 10px;
+        text-align: center;
     }
