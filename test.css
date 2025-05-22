@@ -476,12 +476,14 @@ body{
         border: var(--background_color_light) solid 1px;
         border-radius: 10px;
         z-index: 2;
+        background-color: var(--section_light);
     }
     .lightmode .models_table tr{
         padding: 10px;
         text-align: center;
+        background-color: var(--section_light);
     }
-.lightmode .models_table_alt{
+.lightmode .models_table .alt{
     background-color: var(--section_alt_light);
     margin: auto;
     font-size: 1.2rem;
@@ -490,14 +492,14 @@ body{
     color: var(--text_light);
     padding: 0.3rem;
 }
-    .lightmode .models_table_alt th{
+    .lightmode .models_table .alt th{
         padding: 10px;
         text-align: center;
         border: var(--background_color_light) solid 1px;
         border-radius: 10px;
         z-index: 2;
     }
-    .lightmode .models_table_alt tr{
+    .lightmode .models_table .alt tr{
         padding: 10px;
         text-align: center;
     }
