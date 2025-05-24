@@ -362,6 +362,27 @@ body{
         text-align: center;
     }
 
+.specs {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: var(--btn_background_dark);
+    color: var(--text_dark);
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin: auto;
+    display: block;
+    width: fit-content;
+    }
+.specs:hover {
+    scale: 1.05;
+    }
+    .specs a {
+    text-decoration: none;
+    color: var(--text_dark);
+    }
+
+
+
 
 
 
@@ -502,4 +523,22 @@ body{
     .lightmode .models_table .alt tr{
         padding: 10px;
         text-align: center;
+    }
+.lightmode .specs {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: var(--button_background_light);
+    color: var(--text_light);
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin: auto;
+    display: block;
+    width: fit-content;
+}
+.lightmode .specs:hover {
+    scale: 1.05;
+    }
+    .lightmode .specs a {
+    text-decoration: none;
+    color: var(--text_light);
     }
