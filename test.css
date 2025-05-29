@@ -324,7 +324,8 @@ body{
 .models_table{
     margin: auto;
     font-size: 1.2rem;
-    width: 100%;
+    height: 100%;
+    width: 0;
     border-radius: 10px;
     background-color: var(--section_dark);
     color: var(--text_dark);
@@ -341,6 +342,11 @@ body{
         padding: 10px;
         text-align: center;
     }
+
+.active .models_table  {
+    max-height: 100%;
+    width: 100%;
+}
 
 .models_table_alt{
     background-color: var(--section_alt_dark);

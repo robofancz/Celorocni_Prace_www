@@ -44,12 +44,9 @@ function closeNav() {
 // 
 // models specs button
 
-function toggleSpecs() {
-  
+function openSpecs() {
+  document.getElementById("specs_btn").style.content = "visible";
 }
-
-
-// function toggleSpecs() {
-//   var specsSection = document.getElementById('models_table_hidden');
-//   specsSection.style.display = specsSection.style.display === 'none' ? 'block' : 'none';
-// }
+function closeSpecs() {
+  document.getElementById("specs_btn").style.content = "hidden";
+}
