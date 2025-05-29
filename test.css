@@ -383,6 +383,14 @@ body{
     }
 
 
+.features a {
+    text-decoration: none;
+    }
+.features a:hover {
+    color: var(--text_dark);
+    scale: 1.1;
+    }
+
 
 
 
