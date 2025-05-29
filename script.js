@@ -39,3 +39,17 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+
+// 
+// models specs button
+
+function toggleSpecs() {
+  
+}
+
+
+// function toggleSpecs() {
+//   var specsSection = document.getElementById('models_table_hidden');
+//   specsSection.style.display = specsSection.style.display === 'none' ? 'block' : 'none';
+// }

@@ -391,6 +391,17 @@ body{
     scale: 1.1;
     }
 
+.specs_button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: var(--btn_background_dark);
+    color: var(--text_dark);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    }
+
 
 
 
@@ -559,3 +570,17 @@ body{
     color: var(--text_light);
     }
 
+
+
+.models_table_hiddent {
+    display: none;
+    }
+    .models_table_hidden tr {
+        display: none;
+    }
+.models_table_hidden .alt {
+    display: none;
+    }
+    .models_table_hidden .alt tr {
+        display: none;
+    }
