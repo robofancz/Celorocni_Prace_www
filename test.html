@@ -70,8 +70,9 @@
             <div class="text">
                 <h2>Nissan CSP311</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, fugit? Minus rerum fuga quisquam quaerat nisi aperiam amet suscipit obcaecati. Corporis molestias deleniti modi laboriosam debitis suscipit cum assumenda eaque.</p>
-                <button id="specs_btn" class="specs_btn">Zobrazit specifikace</button>
-                <div class="models_table">
+                <button class="specs_button" onclick="openSpecs()">Open</button>
+                <div class="models_table" id="specs_btn">
+                    <!-- <a href="javascript:void(0)" class="specs_button" onclick="closeSpecs()">Open </a> -->
                     <table class="">
                         <tr>
                             <th>Hmotnost</th>

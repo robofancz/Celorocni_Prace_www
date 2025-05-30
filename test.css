@@ -330,6 +330,7 @@ body{
     background-color: var(--section_dark);
     color: var(--text_dark);
     padding: 0.3rem;
+    content: none;
     }
     .models_table th{
         padding: 10px;
