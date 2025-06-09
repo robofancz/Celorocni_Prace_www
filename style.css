@@ -230,13 +230,11 @@ body{
   z-index: 5;
 }
 .up_button {
+  text-decoration: none;
   position: fixed;
   right: 15px;
   bottom: 25px;
   z-index: 10;
-  color: var(--text_dark);
-  border: none;
-  border-radius: 5px;
   padding: 10px 15px;
   width: 30px;
   height: 20px;
@@ -405,6 +403,21 @@ body{
   transition: background-color 0.3s;
   }
 
+  .sources_back {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: var(--btn_background_dark);
+  color: var(--text_dark);
+  font-size: 1rem;
+  text-decoration: none;
+  margin: auto;
+  width: fit-content;
+  }
+  .sources_back:hover {
+    scale: 1.05;
+  }
+
 
 
 
@@ -506,7 +519,6 @@ body{
   }
 
 .lightmode .models_table{
-  background-color: var(--section_light);
   margin: auto;
   font-size: 1.2rem;
   width: 100%;
@@ -517,18 +529,14 @@ body{
   .lightmode .models_table th{
       padding: 10px;
       text-align: center;
-      border: var(--background_color_light) solid 1px;
       border-radius: 10px;
       z-index: 2;
-      background-color: var(--section_light);
   }
   .lightmode .models_table tr{
       padding: 10px;
       text-align: center;
-      background-color: var(--section_light);
   }
 .lightmode .models_table .alt{
-  background-color: var(--section_alt_light);
   margin: auto;
   font-size: 1.2rem;
   width: 100%;
@@ -539,7 +547,6 @@ body{
   .lightmode .models_table .alt th{
       padding: 10px;
       text-align: center;
-      border: var(--background_color_light) solid 1px;
       border-radius: 10px;
       z-index: 2;
   }
